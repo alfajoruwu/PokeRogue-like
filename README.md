@@ -1,1 +1,1 @@
-# PokeRogue-like
+# Plantilla generica

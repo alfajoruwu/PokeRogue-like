@@ -1,0 +1,12 @@
+FROM node:23
+
+WORKDIR /app
+
+# Instalar nodemon globalmente
+RUN npm install -g nodemon
+
+# Instalar dependencias (se ejecutará cada vez que levantes el contenedor)
+COPY package*.json ./
+RUN npm install
+
+CMD ["nodemon", "app.js"]
